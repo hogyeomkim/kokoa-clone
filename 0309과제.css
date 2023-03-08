@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+}
+@media screen and (max-width: 600px) {
+  /* media 쿼리는 and를 통해서 연결된다.*/
+  div {
+    background-color: tomato;
+  }
+}
+/*스크린이 600px 작으면 토마토로 변경*/
+
+@media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+  div {
+    background-color: yellowgreen;
+  } /* ㅣlandscsape는 가로모드일때이다.
+  세로는 portrait이다.*/
+}
+@media screen and (min-width: 1200px) {
+  div {
+    background-color: wheat;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  span {
+    display: none;
+  }
+} /*디스플레이가 가로일때 스팬을 보여주지않는것이다. */
+
+@media print {
+  body {
+    background-color: tomato;
+  }
+} /*프린터 할때 바디의 색상을 변경한다. */
+span {
+  font-size: 36px;
+}

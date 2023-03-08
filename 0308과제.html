@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The hogyeom times</title>
+  </head>
+  <style>
+    body {
+           background-color: black;
+          display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+              height: 100vh;
+            }
+              @keyframes superSexyCoinFlip {
+             0% {
+           -webkit-transform: scaleY(0.4);
+          transform: scaleY(0.4);
+          }
+         50% {
+        -webkit-transform: scaleY(1);
+         transform: scaleY(1);
+        }
+        100% {1.5        -webkit-transform: scaleY(0.4);
+         transform: scaleY(0.4);
+          }
+                                }
+     @keyframes boom {
+                                  0% {
+                          -webkit-transform: translateY(0) translateX(0);
+                                  transform: translateY(0) translateX(0);
+                        }
+                        25% {
+                          -webkit-transform: translateY(-41px) translateX(41px);
+                                  transform: translateY(-41px) translateX(41px);
+                        }
+                     50% {
+                      -webkit-transform: translateY(-41px) translateX(41px);
+                                  transform: translateY(-41px) translateX(41px);
+                      }
+                      100% { -webkit-transform: translateY(0px) translateX(81px);
+                                transform: translateY(0px) translateX(81px);
+                      }
+    }
+    @keyframes boom2 {
+                      0% {
+                    -webkit-transform: translateY(0) translateX(0);
+                            transform: translateY(0) translateX(0);
+                  }
+                  25% {
+                    -webkit-transform: translateY(41px) translateX(-41px);
+                            transform: translateY(41px) translateX(-41px);
+                  }
+                  50% {
+                  -webkit-transform: translateY(41px) translateX(-41px);
+                          transform: translateY(41px) translateX(-41px);
+                }
+                100% {
+                  -webkit-transform: translateY(0px) translateX(-81px);
+                          transform: translateY(0px) translateX(-81px);
+                    }
+
+    }
+     .bigbox {
+
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  position: relative;
+                                  background-color: teal;
+                                  height: 500px;
+                                  width: 500px;
+
+                                }
+                                .circle {
+
+                                  position: relative;
+                                  top: -70px;
+                                  left: 40px;
+                                    width: 20px;
+                                    height: 20px;
+                                    background-color: white;
+                                    border-radius: 50%;
+                                    margin: 10px;
+                                }
+
+                                .up{ animation: boom 0.5s ease-in-out infinite;
+
+                                }
+                                .down{animation: boom2 0.5s ease-in-out infinite;
+
+                                }
+
+
+                                .small {
+                                  position: relative;
+                                  top: 50px;
+                                  left: -50px;
+                                  background-color: white;
+                                  height: 60px;
+                                  width: 10px;
+                                  margin-left: 2px;
+                                }
+                                .one {
+                                  animation: superSexyCoinFlip 1.3s ease-in-out infinite;
+                                }
+                                .two {
+                                  animation: superSexyCoinFlip 1.3s ease-in-out infinite;
+                                  animation-delay: 0.3s;
+                                }
+                                .tre {
+                                  animation: superSexyCoinFlip  1.3s ease-in-out infinite;
+                                  animation-delay: 0.4s;
+                                }
+                                .four {
+                                  animation: superSexyCoinFlip 1.3s ease-in-out infinite;
+                                  animation-delay: 0.5s;
+
+                                }
+                                .five {
+                                  animation: superSexyCoinFlip 1.3s ease-in-out infinite;
+                                  animation-delay: 0.6s;
+
+                                }
+  </style>
+
+  <body>
+    <div class="bigbox">
+      <div class="circle up"></div>
+      <div class="circle"></div>
+      <div class="circle down"></div>
+
+      <div class="small one"></div>
+      <div class="small two"></div>
+      <div class="small tre"></div>
+      <div class="small four"></div>
+      <div class="small five"></div>
+    </div>
+  </body>
+</html>
